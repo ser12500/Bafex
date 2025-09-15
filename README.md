@@ -1,66 +1,8 @@
-## Foundry
+## 📖 Welcome to BAFEX
+We, the BAFEX team, have an ambitious goal:
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+To connect the real world and the world of cryptocurrency, bringing humanity closer to the original idea of ​​Bitcoin - the free and widespread use of digital assets in everyday life.
 
-Foundry consists of:
+We see the key to such widespread adoption in the ability to effectively exchange cryptocurrencies for real goods and services: this is how we give impetus to large-scale adoption and daily use.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+We want to give real users an easy tool to make purchases with cryptocurrency, while providing merchants with a unique way to reduce costs and increase trust in their products.
