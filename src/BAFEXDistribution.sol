@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-import {IERC20} from "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol";
-import {SafeERC20} from "lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol";
-import {Ownable} from "lib/openzeppelin-contracts/contracts/access/Ownable.sol";
-import {ReentrancyGuard} from "lib/openzeppelin-contracts/contracts/utils/ReentrancyGuard.sol";
-import {Pausable} from "lib/openzeppelin-contracts/contracts/utils/Pausable.sol";
+import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
+import {ReentrancyGuard} from "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
+import {Pausable} from "@openzeppelin/contracts/utils/Pausable.sol";
 
 /**
  * @title BAFEXDistribution
@@ -214,7 +214,6 @@ contract BAFEXDistribution is Ownable, ReentrancyGuard, Pausable {
         totalDistributed += totalBatchAmount;
 
         // Распределяем токены
-        // исправить переполнение !!!!!!!!!!
         for (uint256 i = 0; i < recipients_.length; i++) {
             // Записываем информацию о получателе
             recipients[recipients_[i]] = Recipient({
@@ -330,7 +329,6 @@ contract BAFEXDistribution is Ownable, ReentrancyGuard, Pausable {
      */
     function getActiveCategoriesCount() external view returns (uint256) {
         uint256 count = 0;
-
         for (uint256 i = 0; i < categoryNames.length; i++) {
             if (distributionCategories[categoryNames[i]].isActive) {
                 count++;
